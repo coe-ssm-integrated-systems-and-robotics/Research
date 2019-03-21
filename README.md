@@ -1,3 +1,4 @@
+![nhlstendenMadeByStudents.png](Resources/image/nhlstendenMadeByStudents.png)
 # Integrated Systems & Robotics - Research
 
 [TOC]: # " "
@@ -45,7 +46,7 @@ This repository contains the research we conducted about the possibilities, boun
 
 ## About us & Contact
 
-[Joris Rietveld ](https://github.com/jorisrietveld) - Embedded Software Developer & :penguin: Enthusiast
+[Joris Rietveld ](https://github.com/jorisrietveld) - :penguin: Enthusiast & Embedded Software Developer
 
 ## Research Topics
 While conducting this research we collect manuals, articles other content
