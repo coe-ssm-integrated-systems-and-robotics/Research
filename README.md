@@ -1,4 +1,3 @@
-![nhlstendenMadeByStudents.png](Resources/image/nhlstendenMadeByStudents.png)
 # Integrated Systems & Robotics - Research
 
 [TOC]: # " "
@@ -16,6 +15,7 @@
         - [Raspberry Pi](#raspberry-pi)
     - [Universal Robots](#universal-robots)
 
+![nhlstendenMadeByStudents.png](Resources/image/nhlstendenMadeByStudents.png)
 ## About The Project
 The Netherlands is undergoing a powerful development in the area of High-tech Systems and
 Materials. The sector High-tech Systems and Materials develops and produces top quality materials, products, components and offers services for customers around the world. The initiative taker for this project is Mark van der Staaij, his goal is to develop a system in which a robot can differentiate between different balls based on colour.
