@@ -7,12 +7,13 @@
 - [About This Repository](#about-this-repository)
 - [About us & Contact](#about-us--contact)
 - [Research Topics](#research-topics)
+    - [Background Knowledge](#background-knowledge)
+        - [Python](#python)
+        - [Linux (Raspberry Pi)](#linux-raspberry-pi)
     - [Computer Vision](#computer-vision)
-        - [Machine Learning](#machine-learning)
         - [OpenCV](#opencv)
     - [Hardware & Robotics](#hardware--robotics)
         - [PLC's](#plcs)
-        - [Raspberry Pi](#raspberry-pi)
     - [Universal Robots](#universal-robots)
 
 ## About The Project
@@ -47,80 +48,107 @@ This repository contains the research we conducted about the possibilities, boun
 
 [Joris Rietveld ](https://github.com/jorisrietveld) - :penguin: Enthusiast & Embedded Software Developer
 
-![nhlstendenMadeByStudents.png](Resources/image/nhlstendenMadeByStudents.png)
-
 ## Research Topics
 While conducting this research we collect manuals, articles other content
 that we can use in our research and design documents. Below, we keep track on some of the topics that will end up in our final product.
 
-### Computer Vision
+### Background Knowledge
 
-#### Machine Learning
+#### Python
+
 **Collected Findings**
+- none
 
 **Video Resources**
+- none
 
 **Useful Articles**
+- none
 
 **Useful Software**
+ - [PyCharm](https://www.jetbrains.com/pycharm/) A smart cross platform python IDE free for students.
+ - [Pip](https://pypi.org/project/pip/) The the package manager for python.
+**Manuals, References & Data sheets**
+- none
+
+#### Linux (Raspberry Pi)
+**Collected Findings**
+- none
+
+**Video Resources**
+- none
+
+**Useful Articles**
+- none
+
+**Useful Software**
+- none
 
 **Manuals, References & Data sheets**
+- none
+
+### Computer Vision
 
 #### OpenCV
 **Collected Findings**
+- none
 
 **Video Resources**
+ - **OpenCV 101: A Practical Guide to the Open Computer Vision Library**
+   - [Part 1](https://www.youtube.com/watch?v=jKtQxvzp1A0) Introduction into OpenCV, Python
+   - [Part 2](https://www.youtube.com/watch?v=QZFx9bXEjQY)
+   - [Part 3](https://www.youtube.com/watch?v=Lww8Uy0fIWI)
+   - [Part 4](https://www.youtube.com/watch?v=ZXctVPGkoxg)
 
 **Useful Articles**
+- none
 
 **Useful Software**
+- none
 
 **Manuals, References & Data sheets**
+- none
 
 ### Hardware & Robotics
 
 #### PLC's
 **Collected Findings**
+- none
 
 **Video Resources**
+- none
 
 **Useful Articles**
+- none
 
 **Useful Software**
+- none
 
 **Manuals, References & Data sheets**
-
-#### Raspberry Pi
-
-**Collected Findings**
-
-**Video Resources**
-
-**Useful Articles**
-
-**Useful Software**
-
-**Manuals, References & Data sheets**
+- none
 
 ### Universal Robots
-
 **Collected Findings**
+- none
 
 **Video Resources**
+- none
 
 **Useful Articles**
-
 - [Simple Vision System](https://www.universal-robots.com/how-tos-and-faqs/how-to/ur-how-tos/simple-vision-system-23871/)
   Information about controlling a robot with computer vision.
-- 
+
 **Useful Software**
+- none
 
 **Manuals & Data sheets**
 
 - [Robot Lab - Scripting Manual](http://me.umn.edu/courses/me5286/robotlab/Resources/scriptManual-3.5.4.pdf)
 
+![nhlstendenMadeByStudents.png](Resources/image/nhlstendenMadeByStudents.png)
+
 <hr>
 This page (the documentation) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-[![Author CoE SSM](https://img.shields.io/badge/Author-Joris%20Rietveld-blue.svg)](https://github.com/jorisrietveld)
+[![Author CoE SSM](https://img.shields.io/badge/Author-CoE%20SSM%20Team-blue.svg)](https://github.com/jorisrietveld)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
