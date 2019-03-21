@@ -5,6 +5,7 @@
 - [About The Project](#about-the-project)
 - [The Aim Of The Project](#the-aim-of-the-project)
 - [About This Repository](#about-this-repository)
+- [About us & Contact](#about-us--contact)
 - [Research Topics](#research-topics)
     - [Computer Vision](#computer-vision)
         - [Machine Learning](#machine-learning)
@@ -42,7 +43,13 @@ Research, develop and implement an advanced Pick & Place system with a controlle
 ## About This Repository
 This repository contains the research we conducted about the possibilities, boundaries and knowledge we require to realize the "integrated systems and robotics" project.
 
+## About us & Contact
+
+[Joris Rietveld ](https://github.com/jorisrietveld) - Embedded Software Developer & :penguin: Enthusiast
+
 ## Research Topics
+While conducting this research we collect manuals, articles other content
+that we can use in our research and design documents. Below, we keep track on some of the topics that will end up in our final product.
 
 ### Computer Vision
 
