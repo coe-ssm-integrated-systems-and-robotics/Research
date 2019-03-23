@@ -82,12 +82,22 @@ that we can use in our research and design documents. Below, we keep track on so
 - none
 
 **Useful Software**
-- none
+ - **Operating Systems**
+ - [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) A Debian based operating system which is the official Raspberry Pi OS.
+ - [Noobs](https://www.raspberrypi.org/downloads/noobs/) A simplified image that is able to install multiple OS'es for starters, also official.
+- [Arch Linux ARM](https://archlinuxarm.org/platforms/armv6/raspberry-pi) The ARM port of Arch linux which is a very customizable operating system.
 
 **Manuals, References & Data sheets**
 - none
 
 ### Computer Vision
+
+**Video Resources**
+ - [Computerphile](https://www.youtube.com/watch?v=TJlAxW-2nmI) My favorite youtube channel, about deep learning using a Convolutional neural network.
+ - [Google](https://www.youtube.com/watch?v=OcycT1Jwsns) A very high level overview about Computer Vision & Machine Learning.
+- [3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk) A quick explanation about how neural networks generate a answer.
+- [3Blue1Brown](https://www.youtube.com/watch?v=IHZwWFHWa-w) How neural networks and other machine learning algorithms learn through gradient decent.
+- [MIT Course - Neural Nets ](https://www.youtube.com/watch?v=uXt8qF2Zzfo) A long lecture about the inner workings neural networks.
 
 #### OpenCV
 **Collected Findings**
@@ -95,9 +105,9 @@ that we can use in our research and design documents. Below, we keep track on so
 
 **Video Resources**
  - **OpenCV 101: A Practical Guide to the Open Computer Vision Library**
-   - [Part 1](https://www.youtube.com/watch?v=jKtQxvzp1A0) Introduction into OpenCV, Python
-   - [Part 2](https://www.youtube.com/watch?v=QZFx9bXEjQY)
-   - [Part 3](https://www.youtube.com/watch?v=Lww8Uy0fIWI)
+   - [Part 1](https://www.youtube.com/watch?v=jKtQxvzp1A0) Introduction into OpenCV & Python.
+   - [Part 2](https://www.youtube.com/watch?v=QZFx9bXEjQY) Introduction into image filtering, merging, Edge detection,
+   - [Part 3](https://www.youtube.com/watch?v=Lww8Uy0fIWI) Template Matching, Image Segmentation and Feature Extraction.
    - [Part 4](https://www.youtube.com/watch?v=ZXctVPGkoxg)
 
 **Useful Articles**
@@ -116,7 +126,7 @@ that we can use in our research and design documents. Below, we keep track on so
 - none
 
 **Video Resources**
-- none
+ - [Profinet](https://www.youtube.com/watch?v=wxE0ChP8amk) A quick overview about profinet.
 
 **Useful Articles**
 - none
