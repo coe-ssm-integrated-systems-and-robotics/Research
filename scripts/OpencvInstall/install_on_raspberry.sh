@@ -42,7 +42,7 @@ print_done
 # Step 3: Install Python libraries
 print_job "Install Python libraries..."
 sudo apt-get -y install python3-dev python3-pip python3-venv python3-virtualenv
-sudo -H pip3 install -U pip numpy setuptools wheel virtualenvwrapper virtualenv
+sudo -H pip3 -v install -U pip numpy setuptools wheel virtualenvwrapper virtualenv
 #sudo -H pip install -U pip numpy setuptools wheel virtualenvwrapper virtualenv
 sudo apt-get -y install python3-testresources
 source `which virtualenvwrapper.sh`
@@ -72,9 +72,9 @@ sudo /etc/init.d/dphys-swapfile start
 print_done
 
 print_job "Installing python libraries in the environment..."
-pip install --upgrade pip
-pip install wheel
-pip install wheel setuptools dlib numpy
+pip -v install --upgrade pip
+pip -v install wheel
+pip -v install wheel setuptools dlib numpy
 deactivate
 print_done
 
