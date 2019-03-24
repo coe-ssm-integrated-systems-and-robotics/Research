@@ -6,15 +6,7 @@
 - [The Aim Of The Project](#the-aim-of-the-project)
 - [About This Repository](#about-this-repository)
 - [About us & Contact](#about-us--contact)
-- [Research Topics](#research-topics)
-    - [Background Knowledge](#background-knowledge)
-        - [Python](#python)
-        - [Linux (Raspberry Pi)](#linux-raspberry-pi)
-    - [Computer Vision](#computer-vision)
-        - [OpenCV](#opencv)
-    - [Hardware & Robotics](#hardware--robotics)
-        - [PLC's](#plcs)
-    - [Universal Robots](#universal-robots)
+- [Links](#links)
 
 ## About The Project
 The Netherlands is undergoing a powerful development in the area of High-tech Systems and
@@ -52,9 +44,13 @@ This repository contains the research we conducted about the possibilities, boun
 
  - **Scripts:**
     - **OpenCV**
-        - [Installing OpenCV on Ubuntu (or ubuntu derived systems)](scripts/)
-        - [Installing OpenCV on Rasbian](scripts/)
-        - [Installing OpenCV on MacOS (or ubuntu derived systems)](scripts/)
+        - [Installing OpenCV on any system](scripts/OpenCV/install.sh) Fully automated by running:
+        ```bash
+        $ ./install.sh
+        ```
+        - [Installing OpenCV on Ubuntu (or ubuntu derived systems)](scripts/OpenCV/install_on_ubuntu.sh_)
+        - [Installing OpenCV on Rasbian](scripts/OpenCV/install_on__rasberry.sh)
+        - [Installing OpenCV on MacOS (or ubuntu derived systems)](scripts/OpenCV/install_on_mac.sh_)
     - **Robotics**
     - **General**
  - **Research Resources:**

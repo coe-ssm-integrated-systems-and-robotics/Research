@@ -54,7 +54,6 @@ echo "# Virtual Environment Wrapper" >> ~/.bashrc
 echo "alias workoncv-$cvVersion=\"source $cwd/OpenCV-$cvVersion-py3/bin/activate\"" >> ~/.bashrc
 source "$cwd"/OpenCV-"$cvVersion"-py3/bin/activate
 lsvirtualenv -l
-showvirtualenv
 print_done
 
 print_job "Creating the virtual environment for OpenCV..."
