@@ -1,8 +1,9 @@
 #!/bin/bash
 
-printf "\e[44m =============================================================\n \e[0m"
-printf "\e[44m ===            Installing OpenCV On Ubuntu                ===\n \e[0m"
-printf "\e[44m =============================================================\n \e[0m"
+printf "\e[44m=============================================================\e[0m\n"
+printf "\e[44m===            Installing OpenCV On Ubuntu                ===\e[0m\n"
+printf "\e[44m=============================================================\e[0m\n"
+
 cvVersion="master"
 
 printf "\e[44m Preparing system for installation... \e[0m\n"
@@ -32,7 +33,7 @@ sudo apt -y install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgtk2
 printf "\n\e[32m Done! \e[0m\n"
 
 printf "\e[44m Install Python libraries \e[0m\n"
-sudo apt -y install python3-dev python3-pip python3-venv
+sudo apt -y install python3-dev python3-pip python3-venv wheel
 sudo -H pip3 install -U pip numpy
 sudo apt -y install python3-testresources
 printf "\n\e[32m Done! \e[0m\n"
