@@ -63,7 +63,7 @@ workon OpenCV-"$cvVersion"-py3
 showvirtualenv
 print_done
 
-print_job "Creating temproray swap to make sure we dont run out of memory..."
+print_job "Creating temporary swap to make sure we dont run out of memory..."
 
 sudo sed -i "s/CONF_SWAPSIZE=100/CONF_SWAPSIZE=${swapSize}/g" /etc/dphys-swapfile
 printf "Created a ${swapSize} MB swap file!"
@@ -97,6 +97,7 @@ mkdir build
 cd build
 
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
+            -D CMAKE_VERBOSE_MAKEFILE:BOOL=ON\
             -D CMAKE_INSTALL_PREFIX=$cwd/installation/OpenCV-"$cvVersion" \
             -D INSTALL_C_EXAMPLES=ON \
             -D INSTALL_PYTHON_EXAMPLES=ON \
