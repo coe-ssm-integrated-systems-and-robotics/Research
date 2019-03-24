@@ -1,7 +1,7 @@
 #!/bin/bash
-printf "\e[44m ============================= \e[0m"
-printf "\e[44m Installing OpenCV on Raspbian \e[0m"
-printf "\e[44m ============================= \e[0m"
+printf "\e[44m =============================================================\n \e[0m"
+printf "\e[44m ===            Installing OpenCV On Rasbian               ===\n \e[0m"
+printf "\e[44m =============================================================\n \e[0m"
 
 printf "\e[44m Preparing system for installation... \e[0m"
 sudo apt-get -y purge wolfram-engine
@@ -15,6 +15,7 @@ rm -rf opencv_contrib/build
 mkdir installation
 mkdir installation/OpenCV-"$cvVersion"
 cwd=$(pwd)
+sudo apt-get -y remove x264 libx264-dev
 printf "\n\e[32m Done! \e[0m\n"
 
 printf "\e[44m Updating the system packages using apt... \e[0m"
@@ -23,9 +24,6 @@ sudo apt-get -y upgrade
 printf "\n\e[32m Done! \e[0m\n"
 
 echo "Installing OS libraries"
-sudo apt-get -y remove x264 libx264-dev
-
-## Install dependencies
 sudo apt-get -y install build-essential checkinstall cmake pkg-config yasm git gfortran libjpeg8-dev libjasper-dev libpng12-dev libtiff5-dev libtiff-dev libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine2-dev libv4l-dev
 
 cd /usr/include/linux
@@ -57,13 +55,13 @@ workon OpenCV-"$cvVersion"-py3
 printf "\n\e[32m Done! \e[0m\n"
 
 printf "\e44m Creating temproray swap to make sure we dont run out of memory... \e[0m"
-sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=1024/g' /etc/dphys-swapfile
+sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=2048/g' /etc/dphys-swapfile
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 printf "\n\e[32m Done! \e[0m\n"
 
 printf "\e[44m Installing python libraries in the environment... \e[0m"
-pip install numpy dlib
+pip install setuptools wheel numpy dlib
 deactivate
 printf "\n\e[32m Done! \e[0m\n"
 
@@ -101,6 +99,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 printf "\n\e[32m Done! \e[0m\n"
 
 printf "\n\e[44m Compiling OpenCV... \e[0m"
+# make -d -j$(nproc)    # Maybe try a lower number of CPU's to prevent freezing.
 make -d -j$(nproc)
 printf "\n\e[32m Done! \e[0m\n"
 
@@ -111,7 +110,7 @@ printf "\n\e[32m Done! \e[0m\n"
 cd $cwd
 
 printf "\n\e[44m Removing the temporary swap file... \e[0m"
-sudo sed -i 's/CONF_SWAPSIZE=1024/CONF_SWAPSIZE=100/g' /etc/dphys-swapfile
+sudo sed -i 's/CONF_SWAPSIZE=2048/CONF_SWAPSIZE=100/g' /etc/dphys-swapfile
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 echo "sudo modprobe bcm2835-v4l2" >> ~/.profile
