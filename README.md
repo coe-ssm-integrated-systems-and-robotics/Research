@@ -46,22 +46,22 @@ This repository contains the research we conducted about the possibilities, boun
     - **OpenCV**
         - [Installing OpenCV on any system](scripts/OpenCV/install.sh)
             ```console
-            # Execute the script by running    
-            example@any-system:~/Research$ ./scripts/OpenCV/install.sh
+            Execute the script by running    
+            example@any-system:~/Research $ ./scripts/OpenCV/install.sh
             ```
         - [Installing OpenCV on Ubuntu (or ubuntu derived systems)](scripts/OpenCV/install_on_ubuntu.sh)
             ```console
-            # Execute the script by running    
-            example@any-system:~/Research$ ./scripts/OpenCV/install_on_ubuntu.sh
+            Execute the script by running    
+            example@any-system:~/Research $ ./scripts/OpenCV/install_on_ubuntu.sh
              ```
         - [Installing OpenCV on Rasbian](scripts/OpenCV/install_on_raspberry.sh)
              ```console
-            # Execute the script by running    
-            example@any-system:~/Research$ sh ./scripts/OpenCV/install_on_raspberry.sh
+            Execute the script by running    
+            example@any-system:~/Research $ sh ./scripts/OpenCV/install_on_raspberry.sh
              ```
         - [Installing OpenCV on MacOS](scripts/OpenCV/install_on_mac.sh)
             ```console
-            # Execute the script by running    
+            Execute the script by running    
             example@any-system:~/Research$ ./scripts/OpenCV/install_on_mac.sh
              ```
     - **Robotics**
