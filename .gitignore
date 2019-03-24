@@ -452,3 +452,5 @@ local.properties
 /scripts/OpenCV/OpenCV-master-py3/
 /scripts/OpenCV/opencv_contrib/
 /scripts/OpenCV/installation/
+experiment/openCV/__init__.py
+experiment/robotics/
