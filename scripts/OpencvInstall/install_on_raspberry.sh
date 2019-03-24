@@ -1,18 +1,21 @@
 #!/bin/bash
 start=`date +%s`
+
+cvVersion="master"
+swapSize="2048"
+
 source ./helper.sh
 
 printf "\e[44m=============================================================\e[0m\n"
 printf "\e[44m===            Installing OpenCV On Rasbian               ===\e[0m\n"
 printf "\e[44m=============================================================\e[0m\n"
-print_job "Preparing system for installation..."
 
+print_job "Preparing system for installation..."
 sudo apt-get -y purge wolfram-engine
 sudo apt-get -y purge libreoffice*
 sudo apt-get -y clean
 sudo apt-get -y autoremove
 
-cvVersion="master"
 rm -rf opencv/build
 rm -rf opencv_contrib/build
 mkdir installation
@@ -51,15 +54,19 @@ echo "# Virtual Environment Wrapper" >> ~/.bashrc
 echo "alias workoncv-$cvVersion=\"source $cwd/OpenCV-$cvVersion-py3/bin/activate\"" >> ~/.bashrc
 source "$cwd"/OpenCV-"$cvVersion"-py3/bin/activate
 lsvirtualenv -l
+showvirtualenv
 print_done
 
 print_job "Creating the virtual environment for OpenCV..."
 mkvirtualenv OpenCV-"$cvVersion"-py3 -p python3
 workon OpenCV-"$cvVersion"-py3
+showvirtualenv
 print_done
 
 print_job "Creating temproray swap to make sure we dont run out of memory..."
-sudo sed -i 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=2048/g' /etc/dphys-swapfile
+
+sudo sed -i "s/CONF_SWAPSIZE=100/CONF_SWAPSIZE=${swapSize}/g" /etc/dphys-swapfile
+printf "Created a ${swapSize} MB swap file!"
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 print_done
@@ -103,6 +110,15 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
         -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
         -D BUILD_EXAMPLES=ON ..
 print_done
+
+print_job "Clearing un needed ram before staring compilation..."
+printf "Current memory status:"
+free -m
+sync
+printf "After sync:"
+free -m
+print_done
+
 
 print_job "Compiling OpenCV..."
 # make -d -j$(nproc)    # Maybe try a lower number of CPU's to prevent freezing.
