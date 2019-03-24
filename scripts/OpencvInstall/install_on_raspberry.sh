@@ -1,9 +1,10 @@
 #!/bin/bash
+source ./helper.sh
+
 printf "\e[44m=============================================================\e[0m\n"
 printf "\e[44m===            Installing OpenCV On Rasbian               ===\e[0m\n"
 printf "\e[44m=============================================================\e[0m\n"
-
-printf "\e[44m Preparing system for installation... \e[0m"
+print_job "Preparing system for installation..."
 sudo apt-get -y purge wolfram-engine
 sudo apt-get -y purge libreoffice*
 sudo apt-get -y clean
@@ -36,8 +37,8 @@ printf "\n\e[32m Done! \e[0m\n"
 
 # Step 3: Install Python libraries
 printf "\e[44m Install Python libraries \e[0m"
-sudo apt-get -y install python3-dev python3-pip python3-venv wheel
-sudo -H pip3 install -U pip numpy
+sudo apt-get -y install python3-dev python3-pip python3-venv
+sudo -H pip3 install -U pip numpy setuptools wheel
 sudo apt-get -y install python3-testresources
 printf "\n\e[32m Done! \e[0m\n"
 

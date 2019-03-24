@@ -33,8 +33,8 @@ sudo apt -y install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgtk2
 printf "\n\e[32m Done! \e[0m\n"
 
 printf "\e[44m Install Python libraries \e[0m\n"
-sudo apt -y install python3-dev python3-pip python3-venv wheel
-sudo -H pip3 install -U pip numpy
+sudo apt -y install python3-dev python3-pip python3-venv
+sudo -H pip3 install -U pip numpy wheel setuptools
 sudo apt -y install python3-testresources
 printf "\n\e[32m Done! \e[0m\n"
 
