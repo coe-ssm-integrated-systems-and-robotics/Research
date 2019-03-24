@@ -38,9 +38,9 @@ print_done
 
 # Step 3: Install Python libraries
 print_job "Install Python libraries..."
-sudo apt-get -y install python3-dev python3-pip python3-venv
+sudo apt-get -y install python3-dev python3-pip python3-venv python3-virtualenv
 sudo -H pip3 install -U pip numpy setuptools wheel virtualenvwrapper virtualenv
-sudo -H pip install -U pip numpy setuptools wheel virtualenvwrapper virtualenv
+#sudo -H pip install -U pip numpy setuptools wheel virtualenvwrapper virtualenv
 sudo apt-get -y install python3-testresources
 source `which virtualenvwrapper.sh`
 print_done
@@ -50,6 +50,7 @@ python3 -m venv OpenCV-"$cvVersion"-py3
 echo "# Virtual Environment Wrapper" >> ~/.bashrc
 echo "alias workoncv-$cvVersion=\"source $cwd/OpenCV-$cvVersion-py3/bin/activate\"" >> ~/.bashrc
 source "$cwd"/OpenCV-"$cvVersion"-py3/bin/activate
+lsvirtualenv -l
 print_done
 
 print_job "Creating the virtual environment for OpenCV..."
