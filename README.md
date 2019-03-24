@@ -57,7 +57,7 @@ This repository contains the research we conducted about the possibilities, boun
         - [Installing OpenCV on Rasbian](scripts/OpenCV/install_on_raspberry.sh)
              ```console
             # Execute the script by running    
-            example@any-system:~/Research$ ./scripts/OpenCV/install_on_raspberry.sh
+            example@any-system:~/Research$ sh ./scripts/OpenCV/install_on_raspberry.sh
              ```
         - [Installing OpenCV on MacOS](scripts/OpenCV/install_on_mac.sh)
             ```console
