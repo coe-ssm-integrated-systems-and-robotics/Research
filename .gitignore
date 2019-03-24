@@ -448,3 +448,7 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+/scripts/OpenCV/opencv/
+/scripts/OpenCV/OpenCV-master-py3/
+/scripts/OpenCV/opencv_contrib/
+/scripts/OpenCV/installation/
