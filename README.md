@@ -45,8 +45,8 @@ This repository contains the research we conducted about the possibilities, boun
  - **Scripts:**
     - **OpenCV**
         - [Installing OpenCV on any system](scripts/OpenCV/install.sh) Fully automated by running:
-        ```bash
-        $ ./install.sh
+        ```console
+        example@any-system:~$ ./install.sh
         ```
         - [Installing OpenCV on Ubuntu (or ubuntu derived systems)](scripts/OpenCV/install_on_ubuntu.sh_)
         - [Installing OpenCV on Rasbian](scripts/OpenCV/install_on__rasberry.sh)
