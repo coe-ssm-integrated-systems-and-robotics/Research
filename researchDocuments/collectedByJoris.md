@@ -88,6 +88,24 @@ that we can use in our research and design documents. Below, we keep track on so
 **Manuals, References & Data sheets**
 - none
 
+#### IO Link
+**Collected Findings**
+- none
+
+**Video Resources**
+ - [IO Link](https://www.youtube.com/watch?v=hLfk6xInEuw) A quick overview about what IO-Link is.
+
+**Useful Articles**
+- none
+
+**Useful Software**
+- none
+
+**Manuals, References & Data sheets**
+- none
+
+
+
 ### Universal Robots
 **Collected Findings**
 - none
